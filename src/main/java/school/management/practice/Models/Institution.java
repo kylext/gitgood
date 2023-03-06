@@ -25,8 +25,8 @@ public class Institution {
     //Consequently, we should update the setters to say "add" instead of set
     //(as the object we set is not intended to replace the entire list), and instead of passing List<objType> listVar
     // just pass a Professor/student type object
-    public void addTeachers(Professor Professor) {
-        professors.add(Professor);
+    public void addProfessors(Professor professor) {
+        professors.add(professor);
     }
 
     public List<Student> getStudents() {

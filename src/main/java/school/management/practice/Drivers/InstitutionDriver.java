@@ -1,17 +1,24 @@
 package school.management.practice.Drivers;
 
-// Here, we import any packages we need!
+// Here, we import any packages we need
 import school.management.practice.Models.*;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.logging.Logger;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-public class InstitutionCalculations {
+public class InstitutionDriver {
+
     //Any variables we want to initiate, we put up here!
     Institution institution;
     Student student;
     Professor professor;
     Logger logger;
+    List<Professor> professors;
+    List<Student> students;
 
     public Institution getInstitution() {
         return institution;
@@ -37,12 +44,20 @@ public class InstitutionCalculations {
         this.professor = professor;
     }
 
-    public InstitutionCalculations(Logger logger) throws IOException {
+    public InstitutionDriver(Logger logger) throws IOException {
         this.logger = logger;
     }
 
-    //Below we can add all the methods we need!
+    public void addProfessors(Professor professor) {
+        professors.add(professor);
+    }
+    public void addStudents(Student student) {
+        students.add(student);
+    }
 
-    //Here, we project the Institution's yearly revenue
-    public Double yearRevenue;
+    //Below here we can add methods
+
+    private void requestType(){
+
+    }
 }
