@@ -1,5 +1,6 @@
 package school.management.practice.Models;
 import java.lang.*;
+import java.util.Date;
 
 /**
  * Started 3/6/2023
@@ -12,7 +13,10 @@ public class Student {
     private String name;
     private Double totalFees;
     private Double feesPaid;
-    private int grade;
+    private Double grade;
+    private Date enrollmentDate;
+    private Date endEnrollmentDate;
+    private boolean enrollmentStatus;
 
     /**
      *
@@ -20,7 +24,7 @@ public class Student {
      * @param name student name (First Last)
      * @param grade school grade
      */
-    public Student(String id, String name, Double totalFees, Double feesPaid, int grade){
+    public Student(String id, String name, Double totalFees, Double feesPaid, Double grade){
         this.id = id;
         this.name = name;
         this.totalFees = totalFees;
@@ -61,11 +65,11 @@ public class Student {
         this.feesPaid = feesPaid;
     }
 
-    public int getGrade() {
+    public Double getGrade() {
         return grade;
     }
 
-    public void setGrade(int grade) {
+    public void setGrade(Double grade) {
         this.grade = grade;
     }
 

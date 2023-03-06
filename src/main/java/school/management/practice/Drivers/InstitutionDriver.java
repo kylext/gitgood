@@ -56,8 +56,10 @@ public class InstitutionDriver {
     }
 
     //Below here we can add methods
+    //BIG PICTURE: I would like to try and make some sort of crappy GUI for this so users can click an option rather than type it
 
-    private void requestType(){
+
+    public void requestType(){
 
     }
 }

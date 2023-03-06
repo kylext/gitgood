@@ -1,18 +1,22 @@
 package school.management.practice.Models;
 
-//FUTURE IDEAS: user types "Add Professor", "Update Professor Salary" etc. in terminal/cmd line
-//which then filters to the necessary action (upsert)
-
+import java.util.Date;
 
 public class Professor {
     private String id;
     private String name;
     private Double salary;
+    private Date hireDate;
+    private Date employmentEndDate;
+    private Boolean employmentStatus;
 
-    public Professor(String id, String name, Double salary){
+    public Professor(String id, String name, Double salary, Date hireDate, Date employmentEndDate, Boolean employmentStatus){
         this.id = id;
         this.name = name;
         this.salary = salary;
+        this.hireDate = hireDate;
+        this.employmentEndDate = employmentEndDate;
+        this.employmentStatus = employmentStatus;
     }
 
     //Getters and Setters
@@ -39,4 +43,16 @@ public class Professor {
     public void setSalary(Double salary) {
         this.salary = salary;
     }
+
+    public Date getHireDate() { return hireDate; }
+
+    public void setHireDate(Date hireDate) { this.hireDate = hireDate; }
+
+    public Date getEmploymentEndDate() { return employmentEndDate; }
+
+    public void setEmploymentEndDate(Date employmentEndDate) { this.employmentEndDate = employmentEndDate; }
+
+    public Boolean getEmploymentStatus() { return employmentStatus; }
+
+    public void setEmploymentStatus(Boolean employmentStatus) { this.employmentStatus = employmentStatus; }
 }
