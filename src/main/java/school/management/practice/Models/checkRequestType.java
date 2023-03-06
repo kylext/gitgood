@@ -22,4 +22,8 @@ public class checkRequestType {
         //This would retrieve salary info for an employee
         validRequest.add("Get Salary Information");
     }
+
+    public Boolean validateRequest(String requestType){
+        return validRequest.contains(requestType);
+    }
 }

@@ -60,6 +60,8 @@ public class InstitutionDriver {
 
 
     public void requestType(){
-
+        //Prompt them for why they are using the system
+        System.out.println("Hello, thank you for using our service. ");
     }
+
 }
