@@ -1,15 +1,15 @@
 package school.management.practice.Models;
 
-//FUTURE IDEAS: user types "Add Teacher", "Update Teacher Salary" etc. in terminal/cmd line
+//FUTURE IDEAS: user types "Add Professor", "Update Professor Salary" etc. in terminal/cmd line
 //which then filters to the necessary action (upsert)
 
 
-public class Teacher {
+public class Professor {
     private String id;
     private String name;
     private Double salary;
 
-    public Teacher(String id, String name, Double salary){
+    public Professor(String id, String name, Double salary){
         this.id = id;
         this.name = name;
         this.salary = salary;

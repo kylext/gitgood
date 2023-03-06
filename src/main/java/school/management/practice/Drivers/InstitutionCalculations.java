@@ -10,7 +10,7 @@ public class InstitutionCalculations {
     //Any variables we want to initiate, we put up here!
     Institution institution;
     Student student;
-    Teacher teacher;
+    Professor professor;
     Logger logger;
 
     public Institution getInstitution() {
@@ -29,15 +29,20 @@ public class InstitutionCalculations {
         this.student = student;
     }
 
-    public Teacher getTeacher() {
-        return teacher;
+    public Professor getProfessor() {
+        return professor;
     }
 
-    public void setTeacher(Teacher teacher) {
-        this.teacher = teacher;
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
     }
 
     public InstitutionCalculations(Logger logger) throws IOException {
         this.logger = logger;
     }
+
+    //Below we can add all the methods we need!
+
+    //Here, we project the Institution's yearly revenue
+    public Double yearRevenue;
 }

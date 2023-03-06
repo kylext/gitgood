@@ -3,30 +3,30 @@ package school.management.practice.Models;
 import java.util.*;
 
 public class Institution {
-    List<Teacher> teachers;
+    List<Professor> professors;
     List<Student> students;
     Double grossEarnings;
     Double grossSpending;
 
     //Constructor for the institution class
-    public Institution(List<Teacher> teachers, List<Student> students, Double grossEarnings, Double grossSpending){
-        this.teachers = teachers;
+    public Institution(List<Professor> professors, List<Student> students, Double grossEarnings, Double grossSpending){
+        this.professors = professors;
         this.students = students;
         this.grossEarnings = grossEarnings;
         this.grossSpending = grossSpending;
     }
 
     //Getter and Setter Methods
-    public List<Teacher> getTeachers() {
-        return teachers;
+    public List<Professor> getProfessor() {
+        return professors;
     }
-    //For both Teachers and Students, we will not be passing a list of objects,
-    //but merely adding a teacher/student object to our list array of teachers/students
+    //For both Professor and Students, we will not be passing a list of objects,
+    //but merely adding a Professor/student object to our list array of Professor/students
     //Consequently, we should update the setters to say "add" instead of set
     //(as the object we set is not intended to replace the entire list), and instead of passing List<objType> listVar
-    // just pass a teacher/student type object
-    public void addTeachers(Teacher teacher) {
-        teachers.add(teacher);
+    // just pass a Professor/student type object
+    public void addTeachers(Professor Professor) {
+        professors.add(Professor);
     }
 
     public List<Student> getStudents() {
