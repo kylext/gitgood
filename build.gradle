@@ -1,0 +1,10 @@
+buildscript{
+    repositories{
+        //To add a git repository to our build file, we can use the
+        // jitpack service to let us set our gitgood repo as a dependency
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+        implementation 'com.github.kylext:gitgood:develop'
+    }
+}

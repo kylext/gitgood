@@ -1,4 +1,4 @@
-package school.management.practice;
+package school.management.practice.Models;
 
 import java.util.*;
 

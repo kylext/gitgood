@@ -1,4 +1,4 @@
-package school.management.practice;
+package school.management.practice.Models;
 
 //FUTURE IDEAS: user types "Add Teacher", "Update Teacher Salary" etc. in terminal/cmd line
 //which then filters to the necessary action (upsert)
