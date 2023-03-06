@@ -16,7 +16,7 @@ public class Student {
     private Double grade;
     private Date enrollmentDate;
     private Date endEnrollmentDate;
-    private boolean enrollmentStatus;
+    private Boolean enrollmentStatus;
 
     /**
      *
@@ -24,12 +24,15 @@ public class Student {
      * @param name student name (First Last)
      * @param grade school grade
      */
-    public Student(String id, String name, Double totalFees, Double feesPaid, Double grade){
+    public Student(String id, String name, Double totalFees, Double feesPaid, Double grade, Date enrollmentDate, Date endEnrollmentDate, Boolean enrollmentStatus){
         this.id = id;
         this.name = name;
         this.totalFees = totalFees;
         this.feesPaid = feesPaid;
         this.grade = grade;
+        this.enrollmentDate = enrollmentDate;
+        this.endEnrollmentDate = endEnrollmentDate;
+        this.enrollmentStatus = enrollmentStatus;
     }
 
     //Generate Getters and Setters
@@ -72,6 +75,18 @@ public class Student {
     public void setGrade(Double grade) {
         this.grade = grade;
     }
+
+    public Date getEnrollmentDate() { return enrollmentDate; }
+
+    public void setEnrollmentDate(Date enrollmentDate) { this.enrollmentDate = enrollmentDate; }
+
+    public Date getEndEnrollmentDate() { return endEnrollmentDate; }
+
+    public void setEndEnrollmentDate(Date endEnrollmentDate) { this.endEnrollmentDate = endEnrollmentDate; }
+
+    public Boolean getEnrollmentStatus() { return enrollmentStatus; }
+
+    public void setEnrollmentStatus(Boolean enrollmentStatus) { this.enrollmentStatus = enrollmentStatus; }
 
     //We can set this to void (does not return a value) because we only want the variable feesPaid to be updated
     //When we call feesPaid it will reflect the updates
