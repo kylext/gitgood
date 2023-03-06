@@ -1,6 +1,6 @@
 gitgood was the punniest name I could think of for this repo (sorry)
 
-Expect nothing useful or innovative here -- I'm using this to continue learning and practicing coding (Mainly Java)
+Expect nothing useful or innovative here -- I'm using this to continue learning and practicing programming (Mainly Java)
 <br>
 <br>
 <br>
