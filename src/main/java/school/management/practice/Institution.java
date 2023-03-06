@@ -8,6 +8,7 @@ public class Institution {
     Double grossEarnings;
     Double grossSpending;
 
+    //Constructor for the institution class
     public Institution(List<Teacher> teachers, List<Student> students, Double grossEarnings, Double grossSpending){
         this.teachers = teachers;
         this.students = students;
@@ -19,18 +20,20 @@ public class Institution {
     public List<Teacher> getTeachers() {
         return teachers;
     }
-
-    public void setTeachers(List<Teacher> teachers) {
-        this.teachers = teachers;
+    //For both Teachers and Students, we will not be passing a list of objects,
+    //but merely adding a teacher/student object to our list array of teachers/students
+    //Consequently, we should update the setters to say "add" instead of set
+    //(as the object we set is not intended to replace the entire list), and instead of passing List<objType> listVar
+    // just pass a teacher/student type object
+    public void addTeachers(Teacher teacher) {
+        teachers.add(teacher);
     }
 
     public List<Student> getStudents() {
         return students;
     }
-
-    public void setStudents(List<Student> student) {
-        this.students = student;
-    }
+    //See comment above for addTeachers
+    public void addStudents(Student student) { students.add(student); }
 
     public Double getGrossEarnings() {
         return grossEarnings;
@@ -46,13 +49,5 @@ public class Institution {
 
     public void setGrossSpending(Double grossSpending) {
         this.grossSpending = grossSpending;
-    }
-
-    //Methods to add entries to the Teacher and Student array lists
-    public void addTeacher(Teacher teacher){
-        teachers.add(teacher);
-    }
-    public void addStudent(Student student){
-        students.add(student);
     }
 }
