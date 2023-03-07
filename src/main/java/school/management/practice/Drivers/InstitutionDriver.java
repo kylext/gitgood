@@ -2,7 +2,9 @@ package school.management.practice.Drivers;
 
 // Here, we import any packages we need
 import school.management.practice.Models.*;
+import school.management.practice.PromptUserRequest;
 
+import javax.swing.*;
 import java.io.IOException;
 import java.util.List;
 import java.util.logging.Logger;
@@ -19,6 +21,7 @@ public class InstitutionDriver {
     Logger logger;
     List<Professor> professors;
     List<Student> students;
+    PromptUserRequest promptUserRequest;
 
     public Institution getInstitution() {
         return institution;
@@ -56,9 +59,6 @@ public class InstitutionDriver {
     }
 
     //Below here we can add methods
-    //BIG PICTURE: I would like to try and make some sort of crappy GUI for this so users can click an option rather than type it
-
-
     public void requestType(){
         //Prompt them for why they are using the system
         System.out.println("Hello, thank you for using our service. ");
