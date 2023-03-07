@@ -21,7 +21,7 @@ public class Institution {
         return professors;
     }
     //For both Professor and Students, we will not be passing a list of objects,
-    //but merely adding a Professor/student object to our list array of Professor/students
+    //but merely adding a Professor/student object to our list array of Professors/students
     //Consequently, we should update the setters to say "add" instead of set
     //(as the object we set is not intended to replace the entire list), and instead of passing List<objType> listVar
     // just pass a Professor/student type object
