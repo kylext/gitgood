@@ -1,0 +1,62 @@
+//I'm not especially familiar with gradle, so it is possible that changes will need to be made in the future
+apply plugin: 'java'
+
+repositories {
+    //Hail to our google overlords
+    google()
+    //This is the maven repository
+    mavenCentral()
+    //This is a very useful service that allows us to add our github repository as a dependency
+    //It is free to open source projects ONLY
+    maven { url 'https://jitpack.io' }
+}
+dependencies {
+    //A bunch of useful dependencies
+    implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.19.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.1'
+    implementation 'com.amazonaws:aws-java-sdk-core:1.11.1000'
+    implementation 'org.apache.camel.k:camel-k-core:1.7.0'
+    implementation 'org.apache.camel:camel-salesforce:3.16.0'
+    implementation 'org.apache.camel:camel-kafka:3.16.0'
+    implementation 'org.apache.camel:camel-jdbc:3.16.0'
+    implementation 'org.apache.camel:camel-jackson:3.16.0'
+    implementation 'org.apache.camel:camel-http:3.16.0'
+    implementation 'org.apache.camel:camel-aws2-sts:3.16.0'
+    implementation 'org.apache.camel:camel-velocity:3.16.0'
+    implementation 'org.apache.velocity:velocity-tools:2.0'
+    implementation 'org.json:json:20210307'
+    implementation 'org.apache.camel:camel-direct:3.16.0'
+    implementation 'org.apache.camel:camel-timer:3.16.0'
+    implementation 'com.googlecode.json-simple:json-simple:1.1'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.13.1'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.13.1'
+    implementation 'org.apache.camel:camel-test-junit5:3.16.0'
+    implementation 'org.mockito:mockito-core:3.9.0'
+    implementation 'com.google.guava:guava:31.1-jre'
+    testImplementation 'org.apache.camel:camel-cron:3.16.0'
+    testImplementation 'org.apache.camel:camel-quartz:3.16.0'
+    testImplementation 'org.mockito:mockito-inline:3.9.0'
+    testImplementation 'org.apache.camel:camel-test-junit5:3.16.0'
+    testImplementation 'org.junit.vintage:junit-vintage-engine:5.8.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testImplementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.31'
+    testImplementation 'joda-time:joda-time:2.10.10'
+    testImplementation 'net.minidev:json-smart:2.4.7'
+    testImplementation 'com.google.code.gson:gson:2.9.1'
+    testImplementation 'com.jayway.jsonpath:json-path:2.6.0'
+    testImplementation 'com.netflix.graphql.dgs:graphql-dgs-client:4.9.15'
+
+    //TBD if cucumber will be implemented, so these may get deleted
+    testImplementation 'io.cucumber:cucumber-core:7.3.3'
+    testImplementation 'io.cucumber:cucumber-java:7.3.3'
+    testImplementation 'io.cucumber:cucumber-junit:7.3.3'
+
+    //Our repo :)
+    implementation 'com.github.User.kylext:gitgood:develop'
+}
+ext {
+    //I'm using amazon corretto 11 as my SDK, but the kind of code I will be producing
+    compileSdkVersion = 11
+    minSdkVersion = 8
+    targetSdkVersion = 11
+}
